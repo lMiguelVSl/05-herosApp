@@ -6,12 +6,5 @@ import { Hero, Publisher } from '../../interfaces/heroes.interface';
   templateUrl: './hero-card.component.html'
 })
 export class HeroCardComponent {
-  @Input() hero: Hero = {
-    id: '',
-    superhero: '',
-    publisher: Publisher.DCComics,
-    alter_ego: '',
-    first_appearance: '',
-    characters: ''
-  };
+  @Input() hero!: Hero;
 }
