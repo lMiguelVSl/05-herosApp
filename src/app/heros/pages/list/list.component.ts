@@ -4,12 +4,7 @@ import { HerosService } from '../../services/heros.service';
 
 @Component({
   selector: 'app-list',
-  templateUrl: './list.component.html',
-  styles: [`
-      mat-card {
-        margin-top: 20px;
-      }
-  `]
+  templateUrl: './list.component.html'
 })
 export class ListComponent {
 
