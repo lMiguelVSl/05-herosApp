@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html'
 })
-export class HeroComponent {
+export class HeroComponent implements OnInit{
+  
+  @Input() heroId: string = ''; 
+
+  ngOnInit(): void {
+    console.log();
+  }
 
 }
